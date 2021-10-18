@@ -1,0 +1,54 @@
+<header class="header">
+  <p>Create a New Post:</p>
+</header>
+<form class="form new-project-form">
+  <div class="column">
+    <div class="column is-full">
+      <div class="field">
+        <label class="label">Title</label>
+        <div class="control">
+          <input class="input" type="text" id="title" name="title" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Description</label>
+        <div class="control">
+          <textarea class="textarea" id="description" placeholder="Textarea" name="description"></textarea>
+        </div>
+      </div>
+
+
+      <div class="notification is-primary added">
+        Post added!
+      </div>
+
+      <div class="notification is-danger complete">
+        Please fill out all fields!
+      </div>
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link" id="submit" type="submit">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+{{#if posts.length}}
+<div class="column project-list">
+  <h3>My Posts</h3>
+
+  {{#each posts as |post|}}
+  <div class="row mb-2">
+    <div class="col-md-8">
+      <h4><a href="/project/{{post.id}}">{{post.name}}</a></h4>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+    </div>
+  </div>
+  {{/each}}
+</div>
+{{/if}}
