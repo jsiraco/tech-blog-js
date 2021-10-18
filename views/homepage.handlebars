@@ -1,0 +1,21 @@
+{{#each posts as |post| }}
+<div class="column is-4 project">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">
+                <a class="light" href="/task/{{post.id}}">{{post.name}}</a>
+            </p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                <p>
+                    {{post.description}}
+                </p>
+                <p>
+                    <span class="time-needed">Date Created: {{post.date_created}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
