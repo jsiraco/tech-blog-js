@@ -81,6 +81,14 @@ router.get('/post', withAuth, async (req, res) => {
     }
 });
 
+router.get("/newpost", withAuth, async (req, res) => {
+    try {
+      res.render("newpost");
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {
         res.redirect('/profile');
