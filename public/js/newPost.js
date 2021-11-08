@@ -5,7 +5,7 @@ $(function () {
     const description = $("#description");
 
     // creates a new task and adds it to the database
-    const newTaskHandler = () => {
+    const newPostHandler = () => {
 
         if (name.val() && description.val()) {
 
@@ -28,7 +28,7 @@ $(function () {
 
     createPostBtn.click(function (e) {
         e.preventDefault();
-        newTaskHandler();
+        newPostHandler();
     });
 
 });
