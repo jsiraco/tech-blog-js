@@ -13,11 +13,11 @@ router.get('/', async (req, res) => {
             ],
         });
 
-        const postData = postData.map((post) => post.get({ plain: true }));
+        const posts = postData.map((post) => post.get({ plain: true }));
 
         // Pass serialized data and session flag into template
         res.render('homepage', {
-            post,
+            posts,
             logged_in: req.session.logged_in
         });
     } catch (err) {

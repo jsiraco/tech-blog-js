@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Handlebars",
+    "description": "Templating engine, mostly outmoded"
+  },
+  {
+    "name": "React",
+    "description": "Front-end architecture developed by the Facebook Devs"
+  },
+  {
+    "name": "Typescript",
+    "description": "Compiled Ecmascript that is strongly typed and declarative"
+  }
+]
