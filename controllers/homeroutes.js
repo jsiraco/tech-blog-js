@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
 
 router.get('/post/:id', async (req, res) => {
     try {
-        const postData = await post.findByPk(req.params.id, {
+        const postData = await Post.findByPk(req.params.id, {
             include: [
                 {
                     model: User,
@@ -40,7 +40,6 @@ router.get('/post/:id', async (req, res) => {
 
         res.render('post', {
             post,
-            sponsors: [{ name: "Google" }],
             logged_in: req.session.logged_in
         });
     } catch (err) {
