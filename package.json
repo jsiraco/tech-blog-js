@@ -18,7 +18,6 @@
     "url": "https://github.com/jsiraco/tech_blog_js/issues"
   },
   "dependencies": {
-    "auth0-js": "^9.16.4",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.0.4",
     "dotenv": "^8.2.0",
