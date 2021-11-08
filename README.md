@@ -24,12 +24,7 @@ This work is protected under the MIT License: (https://opensource.org/licenses/M
 Fork
 
 ## Usage
-
-
-## Credits
-
-
-## Tests
+![Tech_blog_Screenshot](https://user-images.githubusercontent.com/83827081/140804952-d9be6459-8c99-49ff-84c9-a7427d10d27e.png)
 
 
 ## Questions
