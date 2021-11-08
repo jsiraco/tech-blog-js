@@ -1,0 +1,38 @@
+<header class="header">
+  <p>Create a Post:</p>
+</header>
+<form class="form new-project-form">
+  <div class="column">
+    <div class="column is-full">
+      <div class="field">
+        <label class="label">Post Name:</label>
+        <div class="control">
+          <input class="input" type="text" id="post" name="post" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">description:</label>
+        <div class="control">
+          <textarea class="textarea" id="description" placeholder="Textarea" name="description"></textarea>
+        </div>
+      </div>
+
+      <div class="notification is-primary added">
+        Post added!
+      </div>
+
+      <div class="notification is-danger complete">
+        Please fill out all fields!
+      </div>
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link" id="submit" type="submit">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<script src="./js/newTask.js"></script>
