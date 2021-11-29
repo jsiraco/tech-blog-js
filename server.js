@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const exphbs = require('express-handlebars');
+const router = require('express').Router();
 const session = require('express-session');
 const routes = require('./controllers/index');
 const helpers = require('./utils/helpers');
@@ -34,7 +35,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // 
-app.get('/', async (req, res, next) => {
+router.get('/', async (req, res, next) => {
   try {
       const postData = await Post.findAll({
           include: [
